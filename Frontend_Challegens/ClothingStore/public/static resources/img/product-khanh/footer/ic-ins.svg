@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="16" height="16" transform="translate(1187 4146)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_6" data-name="Mask Group 6" transform="translate(-1187 -4146)" clip-path="url(#clip-path)">
+    <g id="instagram_15_" data-name="instagram (15)" transform="translate(1187 4146)">
+      <path id="Path_6" data-name="Path 6" d="M8,3.892A4.105,4.105,0,1,0,12.108,8,4.1,4.1,0,0,0,8,3.892Zm0,6.77A2.665,2.665,0,1,1,10.667,8,2.664,2.664,0,0,1,8,10.662Z"/>
+      <path id="Path_7" data-name="Path 7" d="M11.3.051c-1.472-.069-5.118-.065-6.591,0A4.781,4.781,0,0,0,1.35,1.345C-.189,2.883.008,4.957.008,8c0,3.112-.173,5.137,1.342,6.653C2.895,16.194,5,15.992,8,15.992c3.083,0,4.147,0,5.237-.42,1.482-.575,2.6-1.9,2.71-4.279.069-1.473.065-5.118,0-6.591C15.817,1.893,14.31.189,11.3.051Zm2.33,13.581c-1.009,1.009-2.408.919-5.645.919-3.333,0-4.67.049-5.645-.929-1.123-1.118-.92-2.913-.92-5.635,0-3.683-.378-6.336,3.319-6.525.849-.03,1.1-.04,3.237-.04l.03.02c3.553,0,6.34-.372,6.507,3.324.038.843.047,1.1.047,3.231,0,3.295.062,4.639-.929,5.635Z"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="0.959" cy="0.959" r="0.959" transform="translate(11.311 2.771)"/>
+    </g>
+  </g>
+</svg>

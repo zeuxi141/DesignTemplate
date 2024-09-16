@@ -1,0 +1,139 @@
+/* xuất hiện menu */
+.navigation :hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.sub-menu {
+  position: absolute;
+  width: 180px;
+  height: auto;
+  line-height: 45px;
+  top: 50px;
+  background-color: white;
+  /* padding: 10px 10px; */
+  /*  có thể dùng display none thay cho 2 thằng dưới nhưng ko dùng transition dc */
+  opacity: 0;
+  visibility: hidden;
+  transition: linear 0.25s;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.navigation .sub-menu .sub-menu-2 li a {
+  line-height: 20px;
+  display: inline-block;
+}
+.sub-menu :hover .sub-menu-2 {
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu-2 {
+  padding: 10px 0;
+  position: absolute;
+  right: -181px;
+  background-color: white;
+
+  width: 180px;
+  height: auto;
+  top: 0;
+  transition: linear 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.sub-menu-3 {
+  padding: 10px 0;
+  position: absolute;
+  right: -181px;
+  width: 180px;
+  height: auto;
+  top: 0;
+  transition: linear 0.5s;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.sub-menu :hover .sub-menu-3 {
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu-3-second {
+  padding: 10px 0;
+  position: absolute;
+  background-color: white;
+  right: -181px;
+  width: 180px;
+  height: auto;
+  /* background-color: red; */
+  top: 0;
+  transition: linear 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.sub-menu-3:hover .sub-menu-3-second {
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu-4 {
+  padding: 10px 0;
+  position: absolute;
+  right: -181px;
+  background-color: white;
+  width: 180px;
+  height: auto;
+  top: 0;
+  transition: linear 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.sub-menu :hover .sub-menu-4 {
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu-5 {
+  padding: 10px 0;
+  position: absolute;
+  background-color: white;
+  right: -181px;
+  width: 180px;
+  height: auto;
+  /* background-color: red; */
+  top: 0;
+  transition: linear 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.sub-menu :hover .sub-menu-5 {
+  visibility: visible;
+  opacity: 1;
+}
+.sub-menu-cskh {
+  background-color: white;
+  position: absolute;
+  width: 260px;
+  height: auto;
+  line-height: 50px;
+  top: 50px;
+  /* background-color: blue; */
+  padding: 10px 10px;
+  /*  có thể dùng display none thay cho 2 thằng dưới nhưng ko dùng transition dc */
+  opacity: 0;
+  visibility: hidden;
+  transition: linear 0.25s;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.navigation :hover .sub-menu-cskh {
+  opacity: 1;
+  visibility: visible;
+}

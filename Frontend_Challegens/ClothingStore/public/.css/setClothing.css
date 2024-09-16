@@ -1,0 +1,120 @@
+.clothing {
+  border-top: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+}
+.clothing .clothing-noibat {
+  font-size: 18px;
+  margin-top: 16px;
+  font-family: "SVN-Futura Medium", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+  display: flex;
+  font-weight: 200;
+  justify-content: center;
+}
+.clothing-shirt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.clothing-shirt-noibat {
+  position: relative;
+  padding: 20px 0;
+}
+.clothing-shirt-noibat .clothing-shirt-1 {
+  width: 600px;
+  height: 800px;
+}
+.clothing-shirt-title {
+  font-size: 15px;
+  overflow: hidden;
+  line-height: 1.5;
+  color: #7f7f7f;
+  /* display: flex; */
+}
+.clothing-shirt-title p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: black;
+}
+.clothing-shirt-noibat .clothing-shirt-2 {
+  position: absolute;
+  width: 600px;
+  height: 800px;
+  left: 0;
+  transition: all ease-out 0.7s;
+}
+.clothing-shirt :hover .clothing-shirt-2 {
+  opacity: 0;
+  cursor: pointer;
+}
+.clothing-shirt-price .clothing-shirt-title {
+  border: transparent;
+
+  display: flex;
+  justify-content: space-around;
+}
+.clothing-shirt-a {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 600px;
+  height: 800px;
+}
+.btn-click {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border: transparent;
+  background-color: rgb(0, 0, 0);
+  /* background-color:var(--white-color); */
+  /* color: var(--black-color); */
+  color: var(--white-color);
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.btn-click::after,
+.btn-click::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  /* background-color: rgb(0,0,0); */
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--white-color);
+  /* background-color: white; */
+  transition: all 0.5s linear;
+  transform: scaleX(0);
+  z-index: 3;
+}
+
+.btn-click::before {
+  left: 0%;
+  transform-origin: right;
+}
+
+.btn-click::after {
+  transform-origin: left;
+  left: 50%;
+}
+
+.btn-click:hover::after,
+.btn-click:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-click span {
+  position: relative;
+  z-index: 100;
+}
+.clothing-shirt-price span {
+  display: flex;
+  justify-content: center;
+}

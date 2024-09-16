@@ -1,0 +1,167 @@
+:root {
+	--primary-color: #ee4d2d;
+	/* --primary-color-rgba:rgb(238, 77, 45); */
+	--white-color: #fff;
+	--black-color: #000;
+	--text-color: #333;
+	--blue-color: #009eff;
+	--border-color: #dbdbdb;
+	--navbar-height: 34px;
+	--header-height: 120px;
+	--header-with-search-height: calc(
+		var(--header-height) - var(--navbar-height)
+	);
+}
+
+.color-black {
+	color: var(--black-color);
+}
+
+.navigation i {
+	font-size: 10px;
+}
+
+.header .navigation li {
+	list-style: none;
+}
+
+.header .navigation a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 0;
+}
+
+.modal__body {
+	--growth-from: 0.7;
+	--growth-to: 1;
+	/* background-color:var(--white-color); */
+	margin: auto;
+	/*căn giữa = display;flex*/
+	position: relative;
+	z-index: 1;
+	animation: growth linear 0.1s;
+	/* border-radius: 5px; */
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes growth {
+	form {
+		transform: scale(var(--growth-from));
+	}
+	to {
+		transform: scale(var(--growth-to));
+	}
+}
+
+.modal__body {
+	--growth-from: 0.7;
+	--growth-to: 1;
+	/* background-color:var(--white-color); */
+	margin: auto;
+	/*căn giữa = display;flex*/
+	position: relative;
+	z-index: 1;
+	animation: growth linear 0.1s;
+	/* border-radius: 5px; */
+}
+
+.btn-more-1 {
+	/* position: absolute; */
+	margin-top: 50px;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+}
+
+.btn-1 {
+	position: relative;
+	width: 180px;
+	height: 30px;
+	background-color: var(--black-color);
+	border: transparent;
+	cursor: pointer;
+	color: white;
+}
+
+.btn-1::before {
+	position: absolute;
+	content: ' ';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 50%;
+	display: block;
+	transition: all ease-out 0.5s;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-1:hover::before {
+	height: 0;
+	cursor: pointer;
+}
+
+.btn-1::after {
+	position: absolute;
+	content: ' ';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	display: block;
+	transition: all ease-out 0.5s;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-1:hover::after {
+	height: 0;
+	cursor: pointer;
+}
+
+.btn-more-1 {
+	margin-top: 50px;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+}
+
+/* Hover gach chan */
+
+li .line-Under {
+	width: 0;
+	height: 2px;
+	background-color: #999;
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	/* display: none; */
+}
+
+li:hover .line-Under {
+	width: 100%;
+	display: block;
+}
+
+@keyframes scale {
+	from {
+		transform: scaleX(1);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+
+.cart {
+	z-index: 10;
+}

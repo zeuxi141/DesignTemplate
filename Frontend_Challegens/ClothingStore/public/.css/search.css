@@ -1,0 +1,163 @@
+.search {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: var(--white-color);
+  width: 100%;
+  height: 350px;
+  margin-top: 40px;
+  overflow: hidden;
+  /* scroll-behavior: smooth; */
+}
+.modal-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+  /* transition: all 5s ease-in-out; */
+  /* display: block; */
+}
+.search-btn {
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+}
+.input-search-1 {
+  background-color: rgb(243, 243, 243);
+  width: 700px;
+  height: 50px;
+  border-radius: 25px;
+  border-left: hidden;
+  border-top: hidden;
+  border-right: hidden;
+  border-bottom: hidden;
+  list-style: none;
+  outline: none;
+}
+.search-btn-child {
+  position: absolute;
+  padding-left: 16px;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  background-color: var(--white-color);
+  height: 230px;
+  color: rgb(154, 154, 154);
+}
+.search-btn-child h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.search-btn-timkiem:hover {
+  background-color: rgb(229, 229, 229);
+  cursor: text;
+}
+.input-search-1:hover {
+  cursor: text;
+  background-color: rgb(229, 229, 229);
+}
+.search-btn-cancle {
+  border-radius: 25px;
+  margin-top: 9px;
+  /* margin-right: 100px; */
+}
+.search-btn-text {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.input-search-1 i {
+  border: 25px;
+  width: 700px;
+  background-color: var(--white-color);
+  height: 50px;
+}
+.search-btn-timkiem {
+  background-color: rgb(243, 243, 243);
+  /* background-color: var(--white-color); */
+  border-radius: 25px;
+  padding-left: 16px;
+  font-size: 16px;
+}
+.search-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.search-title-child {
+  text-decoration: none;
+  color: var(--black-color);
+  padding: 10px 0;
+}
+
+.btn-timkiem {
+  border-radius: 22px;
+  position: relative;
+  width: 180px;
+  height: 30px;
+  background-color: var(--black-color);
+  border: transparent;
+  cursor: pointer;
+  color: white;
+}
+.btn-timkiem::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 50%;
+  display: block;
+  transition: all ease-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn-timkiem:hover::before {
+  height: 0;
+  cursor: pointer;
+}
+.btn-timkiem::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  display: block;
+  transition: all ease-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn-timkiem:hover::after {
+  height: 0;
+  cursor: pointer;
+}
+/* #myUL{
+    list-style: none;
+    cursor: pointer;
+}
+#myUL li a{
+    display: block;
+}
+.product-search{
+    width: 100px;
+    height: 100px;
+}
+#myUL {
+    overflow: hidden;
+} */
+#myUL {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+#myUL li a {
+  display: block;
+  padding: 10px;
+}

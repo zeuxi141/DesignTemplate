@@ -1,0 +1,273 @@
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 30px;
+}
+h2 {
+  margin: 18px 18px;
+  color: black;
+  text-decoration: none;
+}
+select {
+  border: 1px solid black;
+  padding: 2px;
+}
+.products.father {
+  display: flex;
+}
+.Products.son {
+  flex-direction: column;
+  align-items: center;
+
+  width: 25%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.img {
+  background-color: black;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.products.sale {
+  position: -ms-page;
+  left: 0;
+  width: 40px;
+  height: 36px;
+  background-color: red;
+}
+/*shop now */
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.headerFisrt {
+  width: 100%;
+  background-color: black;
+  height: 40px;
+}
+.headerFirst-title p {
+  color: white;
+  font-weight: 10;
+  font-size: 13px;
+  display: inline-block;
+}
+.headerFirst-title button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.headerFirst-title i {
+  color: aliceblue;
+}
+.headerFirst-text {
+  padding: 0 40px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTwo-title {
+  /* position: fixed; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+
+  /* justify-content: flex-end;
+     */
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  padding: 0 12px;
+  border-bottom: solid 1px #ccc;
+}
+.headerTwo-title i {
+  padding: 0 16px;
+  font-size: 16px;
+}
+.headerTwo-title-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 100;
+
+  /* transition: transform 400ms ; */
+}
+.headerTwo-title-btn :hover {
+  animation: fade 5s;
+}
+.headerTwo-text-one {
+  position: absolute;
+  right: 0;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  /* background-color: red; */
+  border-bottom: solid 1px #ccc;
+}
+.header .navigation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 16px;
+  color: black;
+}
+@keyframes fade {
+  0% {
+    transform: scale(1);
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  5% {
+    transform: scale(1.25);
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  10% {
+    transform: scale(1);
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  85% {
+    font-weight: bold;
+  }
+  /* 15%{
+        transform: scale(1.5);
+        font-weight: bold;
+        padding: 0 10px;
+
+    }
+    20%{
+        transform: scale(1);
+        font-weight: bold;
+        padding: 0 10px;
+
+    }*/
+}
+
+/* .header .navigation :hover{
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
+    
+} */
+.search-box {
+  font-size: 20px;
+  border: solid 0.3em #000000;
+  display: inline-block;
+  position: relative;
+  border-radius: 2.5em;
+}
+.search-box input[type="text"] {
+  font-family: inherit;
+  font-weight: bold;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.3em 2.1em 0.3em 0.4em;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2.5em;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+}
+.search-box input[type="text"]:focus {
+  outline: none;
+}
+.search-box input[type="text"]:focus,
+.search-box input[type="text"]:not(:placeholder-shown) {
+  width: 18em;
+  transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.search-box input[type="text"]:focus + button[type="reset"],
+.search-box input[type="text"]:not(:placeholder-shown) + button[type="reset"] {
+  transform: rotate(-45deg) translateY(0);
+  transition: transform 150ms ease-out 800ms;
+}
+.search-box input[type="text"]:focus + button[type="reset"]:after,
+.search-box
+  input[type="text"]:not(:placeholder-shown)
+  + button[type="reset"]:after {
+  opacity: 1;
+  transition: top 150ms ease-out 950ms, right 150ms ease-out 950ms,
+    opacity 150ms ease 950ms;
+}
+.search-box button[type="reset"] {
+  background-color: transparent;
+  width: 1.4em;
+  height: 1.4em;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.55em;
+  right: 0.55em;
+  transform: rotate(-45deg) translateY(2.2em);
+  transition: transform 150ms ease-out 150ms;
+}
+.search-box button[type="reset"]:before,
+.search-box button[type="reset"]:after {
+  content: "";
+  background-color: #000000;
+  width: 0.3em;
+  height: 1.4em;
+  position: absolute;
+}
+.search-box button[type="reset"]:after {
+  transform: rotate(90deg);
+  opacity: 0;
+  transition: transform 150ms ease-out, opacity 150ms ease-out;
+}

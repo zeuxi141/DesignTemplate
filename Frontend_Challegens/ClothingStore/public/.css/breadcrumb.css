@@ -1,0 +1,34 @@
+.breadcrumb {
+  margin-top: 12px;
+  margin-bottom: 45px;
+  margin-left: 10px;
+  max-width: 100%;
+  line-height: 18px;
+}
+
+.breadcrumb__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 12px;
+  gap: 8px;
+}
+
+.breadcrumb__list li a {
+  padding: 10px;
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+.breadcrumb__list li a:hover {
+  color: black;
+}
+
+.breadcrumb__list li:last-child a {
+  color: black;
+}
+
+.breadcrumb__list li:not(:first-child):before {
+  content: "/ ";
+}

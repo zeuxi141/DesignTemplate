@@ -1,0 +1,155 @@
+.ho.tro {
+  display: flex;
+}
+.letrai {
+  flex-basis: 50%;
+}
+.lephai {
+  flex-basis: 50%;
+}
+.input-name {
+  padding: 8px 0;
+  border-bottom: 1.5px solid #ccc;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  font-size: 16px;
+  width: 700px;
+  margin: 20px 0;
+}
+.input-info {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  color: #ccc;
+}
+.input-email {
+  margin-right: 15px;
+  padding: 8px 0;
+  border-bottom: 1.5px solid #ccc;
+  width: 50%;
+  font-size: 16px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+.input-phone {
+  border-bottom: 1.5px solid #ccc;
+  padding: 8px 0;
+  margin-left: 15px;
+  width: 50%;
+  font-size: 16px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+.input-reminder {
+  margin-top: 30px;
+  border: 1.5px solid #ccc;
+  padding: 8px 0;
+  width: 100%;
+  font-size: 16px;
+  height: 30%;
+  padding-bottom: 140px;
+  padding-top: 20px;
+}
+.input-send {
+  margin-top: 36px;
+  width: 150px;
+  height: 32px;
+  background-color: #47474c;
+  color: var(--white-color);
+  font-weight: 200;
+  font-family: SVN-Futura light;
+}
+.input-send:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.flex.lienhe {
+  display: grid;
+  grid-template-columns: calc(50% - (30px * 1 / 2)) calc(50% - (30px * 1 / 2));
+  grid-column-gap: 45px;
+  grid-column-start: 3;
+  grid-column-end: -2;
+}
+ .flex.con {
+  padding: 30px;
+}
+p {
+  font-size: 17px;
+}
+iframe {
+  padding: 1px;
+  height: 1000px;
+}
+img {
+  margin: 15px 15px;
+}
+.hotline {
+  display: flex;
+}
+.email {
+  display: flex;
+}
+.chatbot {
+  display: flex;
+}
+.flex-items{
+    margin-left: 20px;
+}
+.flex-items-2 {
+  display: flex;
+}
+.flex-items-3 {
+  display: flex;
+}
+.flex-items-4 {
+  display: flex;
+}
+.right {
+  /* position: absolute; */
+  right: 0px;
+  width: 300px;
+  border: 3px;
+  /* padding: 50px; */
+}
+.right button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #47474c;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+} 
+
+.right button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 15px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+} 

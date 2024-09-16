@@ -1,0 +1,112 @@
+.form-cart {
+    position: fixed;
+    top: 24px;
+    right: 0;
+    width: 528px;
+    height: 821px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--white-color);
+    z-index: 20;
+    display: none;
+    /* display: block; */
+    box-shadow: 1px 1px 5px 5px #ccc;
+}
+
+.form-cart-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    padding-bottom: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.form-cart-child h1 {
+    margin: 10px 0;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.form-cart-child h4 {
+    margin: 30px 0;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 300;
+}
+
+.form-cart-btn button {
+    height: 50px;
+    padding: 0 12px;
+    align-items: center;
+    line-height: 24px;
+    font-weight: 300;
+    width: 500px;
+    color: white;
+    background-color: #474747;
+}
+
+.form-cart-img {
+    display: flex;
+    /* align-items: center; */
+    padding: 10px 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-cart-tiltle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-cart-tiltle p {
+    padding-bottom: 58px;
+}
+
+.btn-cart {
+    position: relative;
+    width: 130px;
+    height: 36px;
+    background-color: var(--black-color);
+    border: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-cart::before {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    display: block;
+    transition: all ease-out 0.5s;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-cart:hover::before {
+    height: 0;
+    cursor: pointer;
+}
+
+.btn-cart::after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    display: block;
+    transition: all ease-out 0.5s;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-cart:hover::after {
+    height: 0;
+    cursor: pointer;
+}
+
+.btn-buy {
+    margin: 10px 12px;
+}

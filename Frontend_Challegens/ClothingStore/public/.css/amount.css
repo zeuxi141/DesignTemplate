@@ -1,0 +1,25 @@
+.item-amount {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.buy-amount button {
+  width: 15px;
+  border: white;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+}
+
+.buy-amount button:hover {
+  color: black;
+}
+
+.buy-amount .amount {
+  width: 30px;
+  text-align: center;
+  border: white;
+}

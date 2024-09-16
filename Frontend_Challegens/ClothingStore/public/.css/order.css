@@ -1,0 +1,38 @@
+.btn-muahang {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  background-color: var(--black-color);
+  border: transparent;
+  color: white;
+}
+.btn-muahang::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  display: block;
+  transition: all ease-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn-muahang:hover::before {
+  height: 0;
+  cursor: pointer;
+}
+.btn-muahang::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  display: block;
+  transition: all ease-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn-muahang:hover::after {
+  height: 0;
+  cursor: pointer;
+}

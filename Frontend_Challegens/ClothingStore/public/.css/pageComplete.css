@@ -1,0 +1,24 @@
+.Order-completed-info h2 {
+    margin: 50px 18px;
+}
+
+.Order-completed {
+    background: gray;
+    padding: 5%;
+}
+
+.Order-completed img {
+    width: 10%;
+}
+
+.text-completed {
+    padding: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.info {
+    margin: 36px;
+    font-size: large;
+}

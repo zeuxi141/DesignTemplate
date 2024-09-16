@@ -1,0 +1,257 @@
+.a2 {
+    color: black;
+}
+
+.frm__flex {
+    display: flex;
+}
+
+.frm__flex__spcBtw {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frm__flex__center {
+    display: flex;
+    justify-content: center;
+}
+
+.frm__border {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-style: none;
+    border-radius: 5px;
+    border-bottom: 1px solid gray;
+    transition: 0.2s linear;
+    outline: none;
+}
+
+.frm__border__noneStyle {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-style: none;
+    transition: 0.2s linear;
+    outline: none;
+}
+
+.col-1 * {
+    width: 760px;
+}
+
+.col-2 * {
+    width: 370px;
+}
+
+.col-3 * {
+    width: 140px;
+}
+
+.col-4 * {
+    width: 600px;
+}
+
+.col-5 * {
+    width: 240px;
+}
+
+.range_spcBtw>* {
+    margin-right: 20px;
+}
+
+.range_spcBtw>*:last-child {
+    margin-right: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    appearance: none;
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+}
+
+select:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.login-form form h3 {
+    margin: 100px 0 30px 0;
+}
+
+.login-form p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.login-form form {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox {
+    display: flex;
+    margin: 5px 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 8px;
+    border-radius: 4px;
+    border-style: none none solid none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: gray;
+}
+
+.form-login-2 {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-form {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background-color: var(--black-color);
+    border: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-form::before {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    display: block;
+    transition: all ease-out .5s;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.btn-form:hover::before {
+    height: 0;
+    cursor: pointer;
+}
+
+.btn-form::after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    display: block;
+    transition: all ease-out .5s;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.btn-form:hover::after {
+    height: 0;
+    cursor: pointer;
+}
+
+.mini-btn-form {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background-color: var(--black-color);
+    border: transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.mini-btn-form::before {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    display: block;
+    transition: all ease-out .5s;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.mini-btn-form:hover::before {
+    height: 0;
+    cursor: pointer;
+}
+
+.mini-btn-form::after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    display: block;
+    transition: all ease-out .5s;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.mini-btn-form:hover::after {
+    height: 0;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.btn-edit:disabled {
+    color: white;
+    background-color: gray;
+    cursor: not-allowed;
+}

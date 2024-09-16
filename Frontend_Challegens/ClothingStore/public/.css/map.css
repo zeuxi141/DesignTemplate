@@ -1,0 +1,75 @@
+.map {
+  /* border-top: 1px solid #ccc; */
+  margin-top: 80px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  /* width: 100%; */
+}
+.map-content h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.map-content {
+  padding-left: 50px;
+}
+.input-name {
+  padding: 8px 0;
+  border-bottom: 1.5px solid #ccc;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  font-size: 16px;
+  width: 100%;
+  margin: 20px 0;
+}
+.input-info {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  color: #ccc;
+}
+.input-email {
+  margin-right: 15px;
+  padding: 8px 0;
+  border-bottom: 1.5px solid #ccc;
+  /* width: 50%; */
+  font-size: 16px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+.input-phone {
+  border-bottom: 1.5px solid #ccc;
+  padding: 8px 0;
+  margin-left: 15px;
+  /* width: 50%; */
+  font-size: 16px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+.input-reminder {
+  margin-top: 30px;
+  border: 1.5px solid #ccc;
+  padding: 8px 0;
+  width: 100%;
+  font-size: 16px;
+  height: 30%;
+  padding-bottom: 140px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+.input-send {
+  margin-top: 36px;
+  width: 150px;
+  height: 32px;
+  background-color: #47474c;
+  color: var(--white-color);
+  font-weight: 200;
+  font-family: SVN-Futura light;
+}
+.input-send:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

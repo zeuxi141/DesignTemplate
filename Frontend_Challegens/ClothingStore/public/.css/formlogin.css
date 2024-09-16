@@ -1,0 +1,265 @@
+.auth-form {
+  background-color: var(--white-color); /*background form đăng ký*/
+  border-radius: 5px;
+  overflow: hidden; /*làm cho khung ở dưới đc bo vào do thằng con lớn hơn với thằng cha*/
+  margin: auto;
+  width: 600px;
+  margin-top: 200px;
+  border: 1px solid #ccc;
+  position: relative;
+  /* display: none; */
+  display: block;
+}
+.auth-form__container {
+  height: 410px;
+  padding: 0 60px;
+  position: relative;
+}
+.auth-form__header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  /* margin-top: 10px;  */
+  display: flex;
+}
+
+.auth-form__switch-btn {
+  padding: 30px 0;
+  margin: 0 auto;
+  font-size: 2.1rem;
+  color: var(--black-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.auth-form__input {
+  width: 100%;
+  margin-top: 16px;
+  /* padding:0 12px;  */
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  outline: none;
+  height: 40px;
+  /* bỏ viền border trên phải trái */
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+/* tạo dg viền boder khi bấm vào input */
+.auth-form__input:focus {
+  border-color: #888;
+}
+.auth-form__help-forgot {
+  color: var(--primary-color);
+}
+.auth-form__aside {
+  margin-top: 18px;
+}
+.auth-form__policy {
+  line-height: 1.8rem;
+  font-size: 1rem;
+  /* padding:0 12px;  */
+}
+.auth-form__text-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.auth-form__controls {
+  padding-bottom: 45px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.auth-form__controls-back {
+  /* margin-right: 8px;  */
+  background-color: var(--white-color);
+}
+.auth-form__socials {
+  padding: 16px 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  background-color: #f5f5f5;
+}
+.auth-form__socials-icon {
+  font-size: 1.8rem;
+}
+.auth-form__socials--facebook {
+  color: var(--white-color);
+  background-color: #3a5a98;
+}
+.auth-form__socials-google {
+  background-color: var(--white-color);
+  color: #666;
+}
+.auth-form__socials--facebook .auth-form__socials-icon {
+  color: var(--white-color);
+}
+.auth-form__socials-title {
+  margin: 0 8px;
+}
+.auth-form__help {
+  display: flex;
+  justify-content: flex-end;
+}
+.auth-form__help-link {
+  text-decoration: none;
+  color: #939393;
+  font-size: 1.4rem;
+}
+.auth-form__help-separate {
+  display: block;
+  height: 22px;
+  border-left: 1px solid var(--border-color);
+  margin: -3px 16px;
+}
+.auth-form__heading {
+  font-size: 2.2rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.btn {
+  position: relative;
+  width: 180px;
+  height: 30px;
+  background-color: var(--black-color);
+  border: transparent;
+  cursor: pointer;
+
+  color: white;
+}
+.btn::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  display: block;
+  transition: all ease-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn:hover::before {
+  height: 0;
+  cursor: pointer;
+}
+.btn::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  display: block;
+  transition: all ease-out 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.btn:hover::after {
+  height: 0;
+  cursor: pointer;
+}
+
+.quenmk {
+  text-decoration: none;
+  color: var(--blue-color);
+  font-size: 14px;
+}
+.btn-fb-gg {
+  width: 180px;
+  height: 40px;
+  background-color: #47474c;
+  border: transparent;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  align-items: center;
+}
+.auth-form__dangky {
+  font-size: 1rem;
+  padding-top: 10px;
+}
+
+.auth-form__dangky--theA {
+  padding-top: 12px;
+  color: var(--blue-color);
+  text-decoration: none;
+  background: transparent;
+  border: transparent;
+}
+.link {
+  color: black;
+  border: transparent;
+  background-color: transparent;
+}
+
+.link {
+  position: relative;
+  padding: 0 0 2px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#btnDangKy {
+  border: transparent;
+  background-color: transparent;
+  text-decoration: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 10;
+}
+
+.auth-form__container .btnClose {
+  position: absolute;
+  background-color: transparent;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: transparent;
+  border-radius: 13px;
+  font-size: 37px;
+  right: 0;
+  top: 0;
+}
+.btnClose {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+.btnClose:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  display: none;
+}
+.form__group--child {
+  display: flex;
+  align-items: end;
+}
+/* input #checkbox {
+    display: n;
+} */

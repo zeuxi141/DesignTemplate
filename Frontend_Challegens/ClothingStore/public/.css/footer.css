@@ -1,0 +1,78 @@
+footer {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin-top: 60px;
+}
+.bocongthuong {
+  margin-top: 50px;
+  width: 200px;
+}
+.container-footer {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-title-contact {
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--black-color);
+  font-weight: 100;
+}
+.footer-title-contact p {
+}
+.footer-title-contact a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: 540;
+}
+.footer-product-1 {
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--black-color);
+}
+.footer-product-1 a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 100;
+}
+.footer-product-1 a:hover {
+  cursor: pointer;
+  color: var(--black-color);
+  font-weight: bold;
+}
+.container-footer-title p:nth-child(2) {
+  padding-bottom: 40px;
+}
+.container-footer-title p {
+  font-weight: 100;
+}
+.container-footer-base h3 {
+  font-weight: 400;
+  padding: 30px 0;
+}
+.footer-icon {
+  font-size: 20px;
+}
+
+.footer-icon a {
+  margin: 0 8px;
+  counter-reset: white;
+}
+.footer-icon a :nth-child(1):hover {
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 5px;
+  transform: scale(1.5);
+}
+.line--hover {
+  animation: fade 0.5s;
+}
+
+@keyframes fade2 {
+  from {
+    font-weight: 100;
+  }
+  to {
+    font-weight: bold;
+  }
+}
