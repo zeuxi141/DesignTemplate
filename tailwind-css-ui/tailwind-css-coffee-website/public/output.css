@@ -556,21 +556,8 @@ video {
   display: none;
 }
 
-.absolute{
-  position: absolute;
-}
-
-.z-2{
-  z-index: 2;
-}
-
-.z-\[2\]{
-  z-index: 2;
-}
-
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.relative{
+  position: relative;
 }
 
 .mx-2{
@@ -637,6 +624,10 @@ video {
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -645,11 +636,6 @@ video {
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .text-center{
@@ -697,6 +683,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.custom-topmenu-expanded{
+  position: absolute;
+  top: 2.5rem;
+  z-index: 50;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  text-align: center;
+}
+
 .custom-top-menu-item{
   position: relative;
   cursor: pointer;
@@ -704,28 +700,30 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.custom-top-menu-item::after{
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 0.125rem;
-  width: 0px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(200 159 148 / var(--tw-bg-opacity));
-  transition-property: all;
-  transition-duration: 300ms;
-  content: var(--tw-content);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .custom-top-menu-item:hover{
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-.custom-top-menu-item:hover::after{
-  content: var(--tw-content);
-  width: 100%;
+@media (min-width: 1024px){
+  .custom-top-menu-item::after{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 0.125rem;
+    width: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(200 159 148 / var(--tw-bg-opacity));
+    transition-property: all;
+    transition-duration: 300ms;
+    content: var(--tw-content);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .custom-top-menu-item:hover::after{
+    content: var(--tw-content);
+    width: 100%;
+  }
 }
 
 .custom-icon{
@@ -751,10 +749,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:relative{
-    position: relative;
-  }
-
   .lg\:flex{
     display: flex;
   }
