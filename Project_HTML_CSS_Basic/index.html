@@ -27,6 +27,12 @@
             border-bottom: 4px solid #fdb347;
         }
 
+        .link-github-collections:hover,
+        .design:hover,
+        .design:focus {
+            color: #fdb347;
+        }
+
         .gallery {
             display: flex;
             flex-direction: row;
@@ -46,33 +52,44 @@
             overflow: hidden;
         }
 
+        .design>a {
+            text-decoration: none;
+        }
+
+
+        /* .image-contain {
+            width: 100%;
+            height: 300px;
+            position: relative;
+
+        } */
+
+
         .gallery>.design img {
             width: 100%;
             height: 300px;
             object-fit: cover;
             border-radius: 10px;
             transition: all .5s;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .1);
         }
 
         .gallery>.design:hover img,
         .gallery>.design:focus img {
-            transform: scale(1.125);
+            transform: scale(1.05);
         }
 
-        .child:before {
-            content: "";
-            display: none;
-            height: 100%;
-            width: 100%;
+
+
+        /* .gallery>.design>a::before {
             position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(52, 73, 94, 0.75);
-        }
+            content: "Hello";
+            z-index: 100;
+            width: 100%;
+            height: 300px;
+            background-color: #6868a5;
+        } */
 
-        .design>a {
-            text-decoration: none;
-        }
 
         .Description>h3 {
             font-size: 18px;
@@ -117,85 +134,87 @@
     </header>
     <div class="gallery">
         <div class="design photo-1">
-            <a href="./Cafe Menu/CAMPER CAFE.html">
+            <a class="image-contain" href="./Cafe Menu/CAMPER CAFE.html">
                 <img alt="cat-photo-1" src="./Data/imgs/Caffe-menu.png">
-                <div class="Description">
-                    <h3>Camper Cafe</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>Camper Cafe</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-2">
-            <a href="./Flex-box/CatPhotoGallery.html">
+            <a class="image-contain" href="./Flex-box/CatPhotoGallery.html">
                 <img alt="cat-photo-1" src="./Data/imgs/CatGallery.png">
-                <div class="Description">
-                    <h3>Cat Photo Gallery</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>Cat Photo Gallery</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-3">
-            <a href="./Nutrition label/index.html">
+            <a class="image-contain" href="./Nutrition label/index.html">
                 <img alt="cat-photo-1" src="./Data/imgs/Nutrition_Label.png">
-                <div class="Description">
-                    <h3>Nutrition label</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>Nutrition label</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-4">
-            <a href="./Registration Form/index.html">
+            <a class="image-contain" href="./Registration Form/index.html">
                 <img alt="cat-photo-1" src="./Data/imgs/Registration form.png">
-                <div class="Description">
-                    <h3>Registration form</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>Registration form</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-5">
-            <a href="./Survey Form/index.html">
+            <a class="image-contain" href="./Survey Form/index.html">
                 <img alt="cat-photo-1" src="./Data/imgs/SurveyForm.png">
-                <div class="Description">
-                    <h3>Camper Cafe</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>Camper Cafe</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-6">
-            <a href="https://design-template-git-master-zeuxi141s-projects.vercel.app/" target="_blank">
+            <a class="image-contain" href="https://design-template-git-master-zeuxi141s-projects.vercel.app/"
+                target="_blank">
                 <img alt="cat-photo-1" src="./Data/imgs/BlogReiwCard.png">
-                <div class="Description">
-                    <h3>Blog Review Card</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>Blog Review Card</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-7">
-            <a href="https://qr-code-component-o3hc77phl-zeuxi141s-projects.vercel.app/" target="_blank">
+            <a class="image-contain" href="https://qr-code-component-o3hc77phl-zeuxi141s-projects.vercel.app/"
+                target="_blank">
                 <img alt="cat-photo-1" src="./Data/imgs/QR-component.png">
-                <div class="Description">
-                    <h3>QR component</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>QR component</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-8">
-            <a href="https://news-homepage-ui-eight.vercel.app/" target="_blank">
+            <a class="image-contain" href="https://news-homepage-ui-eight.vercel.app/" target="_blank">
                 <img alt="cat-photo-1" src="./Data/imgs/news-homepage.png">
-                <div class="Description">
-                    <h3>News home page responsive</h3>
-                    <p>Built in 2024</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>News home page responsive</h3>
+                <p>Built in 2024</p>
+            </div>
         </div>
         <div class="design photo-8">
-            <a href="../Frontend_Challegens/ClothingStore/src/pages/index.html" target="_blank">
+            <a class="image-contain" href="../Frontend_Challegens/ClothingStore/src/pages/index.html" target="_blank">
                 <img alt="cat-photo-1" src="./Data/imgs/ClothingStore.png">
-                <div class="Description">
-                    <h3>Clone levent store</h3>
-                    <p>Built in 2022 - this web is not responsive</p>
-                </div>
             </a>
+            <div class="Description">
+                <h3>Clone levent store</h3>
+                <p>Built in 2022 - this web is not responsive</p>
+            </div>
         </div>
     </div>
 </body>
