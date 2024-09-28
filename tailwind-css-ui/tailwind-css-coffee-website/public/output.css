@@ -688,6 +688,20 @@ video {
   top: 2.5rem;
   z-index: 50;
   width: 100%;
+}
+
+@keyframes slideDown{
+  0%{
+    transform: translateY(-100%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.custom-topmenu-expanded{
+  animation: slideDown 0.5s ease-in-out;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   text-align: center;
@@ -724,6 +738,11 @@ video {
     content: var(--tw-content);
     width: 100%;
   }
+}
+
+.custom-top-menu-item-active{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .custom-icon{
