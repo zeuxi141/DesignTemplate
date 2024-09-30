@@ -13,8 +13,9 @@
 
 <body>
     <div id="root">
-        <div class="content-wrapper font-karla max-w-screen-2xl text-base mx-auto px-8">
-            <header class="p-6 mx-auto">
+        <div class="content-wrapper custom-static-parallax font-karla text-base mx-auto px-8">
+            <!--content-wrapper-no parallax-->
+            <header class="p-6 mx-auto w-full max-w-screen-2xl">
                 <nav class="flex flex-row justify-between items-center relative">
                     <div class="logo basic-2/6 text-center text-xl font-semibold cursor-pointer">
                         CoffeeStyle.
@@ -25,7 +26,7 @@
                             <a href="#">home</a>
                         </li>
                         <li class="custom-top-menu-item">
-                            <a href="/product">our products</a>
+                            <a href="/product">products</a>
                         </li>
                         <li class="custom-top-menu-item">
                             <a href="/blog">blog</a>
@@ -70,488 +71,480 @@
                 </nav>
             </header>
             <!--end header-->
-            <main>
-                <div class="slider h-[530px] bg-[url('./img/slider_bg.jpg')] bg-cover bg-no-repeat bg-bottom">
-                    <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40">
-                        <div class="mx-16 text-white text-center">
-                            <div class="uppercase mb-6">Best place to Buy coffee</div>
-                            <div class="font-medium text-5xl mb-6">Coffee Mugs</div>
-                            <div class="font-medium text-lg mb-8">The most versatile furniture system ever created.
-                                Designed to fit your life,
-                                made to move and grow.</div>
-                            <div class="flex justify-center">
-                                <div class="custom-button bg-white text-gray-900 w-max">
-                                    Explore our products
-                                </div>
+            <div
+                class="slider w-full max-w-screen-2xl h-[600px] bg-[url('./img/slider_bg.jpg')] bg-cover bg-no-repeat bg-bottom">
+                <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40">
+                    <div class="mx-16 text-white text-center">
+                        <div class="uppercase mb-6">Best place to Buy coffee</div>
+                        <div class="font-medium text-5xl mb-6">Coffee Mugs</div>
+                        <div class="font-medium text-lg mb-8">The most versatile furniture system ever created.
+                            Designed to fit your life,
+                            made to move and grow.</div>
+                        <div class="flex justify-center">
+                            <div class="custom-button bg-white text-gray-900 w-max">
+                                Explore our products
                             </div>
                         </div>
                     </div>
-                </div><!--end slider-->
-
-                <div class="story">
-                    <div class="w-full h-full flex justify-center items-center">
-                        <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
-                            <div class="text-3xl leading-10 mb-6">Even the all-powerful Pointing has no control about
-                                the blind
-                                texts.</div>
-                            <div class="text-gray-500 leading-7 mb-6">It is a paradisematic country, in which roasted
-                                parts of sentences fly into
-                                your mouth.
-                                <br> Even the all-powerful Pointing has no control about the blind texts it is an
-                                almost unorthographic life One day however a small line of blind text by the name of
-                                Lorem Ipsum decided to leave for the far World of Grammar.
-                            </div>
-                            <div class="">
-                                <a class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 after:hover:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400"
-                                    href="#">Read the full
-                                    story</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--end story-->
-
-                <div class="custom-subheadline ">
-                    <div class="custom-subheadline-deco-line "></div>
-                    <div class="custom-subheadline-label ">
-                        Featured Mugs</div>
-                    <div class="custom-subheadline-deco-line "></div>
                 </div>
-                <div class="feature-mugs w-[95%] lg:w-[65%] mx-auto mb-24">
-                    <div class="grid lg:grid-cols-2 lg:gap-4 gap-8">
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[400px] sm:h-[540px] bg-[url('./img/feature_mug1.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Pink
-                                    Premium Ceramic</a>
-                                <div class="custom-price">
-                                    <span class="text-xl text-coffee-400">$50.00 USD</span>
-                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[400px] lg:h-[540px] bg-[url('./img/more_product_06.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <!-- <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div> -->
-                                        <div
-                                            class="absolute  bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center mt-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Golden
-                                    Designers Mug</a>
-                                <div class="custom-price">
-                                    <!-- <span class="text-lg text-coffee-400">$50.00 USD</span> -->
-                                    <span class="ml-2 text-gray-500">$67.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--end feature mugs-->
+            </div><!--end slider-->
 
-                <div class="custom-subheadline ">
-                    <div class="custom-subheadline-deco-line "></div>
-                    <div class="custom-subheadline-label ">
-                        More Products</div>
-                    <div class="custom-subheadline-deco-line "></div>
-                </div>
-                <div class="more-products w-[95%] lg:w-[65%] mx-auto mb-16">
-                    <div class="grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4 gap-8">
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_05.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Red Love
-                                    Cup</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
-                                    <span class="text-gray-500">$50.00 USD</span>
-                                </div>
-                            </div>
+            <div class="story">
+                <div class="w-full h-full flex justify-center items-center">
+                    <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 pt-24 text-center">
+                        <div class="text-3xl leading-10 mb-6">Even the all-powerful Pointing has no control about
+                            the blind
+                            texts.</div>
+                        <div class="text-gray-500 leading-7 mb-6">It is a paradisematic country, in which roasted
+                            parts of sentences fly into
+                            your mouth.
+                            <br> Even the all-powerful Pointing has no control about the blind texts it is an
+                            almost unorthographic life One day however a small line of blind text by the name of
+                            Lorem Ipsum decided to leave for the far World of Grammar.
                         </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_07.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Black Tea
-                                    Cup</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$47.00 USD</span>
-                                    <span class="text-gray-500">$30.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_03.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">B&W
-                                    Essentials Mug</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$20.00 USD</span>
-                                    <span class="text-gray-500">$19.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_09.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Winter
-                                    Style Mug</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$27.00 USD</span>
-                                    <span class="text-gray-500">$25.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_01.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Ceramic
-                                    Tea</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$46.00 USD</span>
-                                    <span class="text-gray-500">$40.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_08.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">No Handle
-                                    Bar Cup</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$34.00 USD</span>
-                                    <span class="text-gray-500">$20.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_10.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Espresso
-                                    Cup by Mugs.co</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$25.00 USD</span>
-                                    <span class="text-gray-500">$22.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div class="h-[380px] bg-[url('./img/feature_mug1.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Pink
-                                    Premium Ceramic</a>
-                                <div class="custom-price">
-                                    <span class="text-xl text-coffee-400">$50.00 USD</span>
-                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-product-card ">
-                            <div
-                                class="h-[380px] bg-[url('./img/more_product_02.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
-                                            On Sale.</div>
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Explore Mug</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center my-8">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Summer
-                                    Designer Cup</a>
-                                <div class="custom-price">
-                                    <span class="ml-2 text-gray-400 line-through">$29.00 USD</span>
-                                    <span class="text-gray-500">$24.00 USD</span>
-                                </div>
-                            </div>
+                        <div class="">
+                            <a class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 after:hover:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400"
+                                href="#">Read the full
+                                story</a>
                         </div>
                     </div>
-                </div> <!--end more-products-->
-                <div class="custom-subheadline ">
-                    <div class="custom-subheadline-deco-line "></div>
-                    <div class="custom-subheadline-label">
-                        Buy 2 mugs and get a coffee magazine free
-                    </div>
-                    <div class="custom-subheadline-deco-line "></div>
                 </div>
+            </div> <!--end story-->
 
-                <div class="coffee-news w-[95%] lg:w-[65%] mx-auto mb-24">
-                    <div class="flex flex-col md:flex-row justify-center items-center gap-5">
+            <div class="custom-subheadline ">
+                <div class="custom-subheadline-deco-line "></div>
+                <div class="custom-subheadline-label ">
+                    Featured Mugs</div>
+                <div class="custom-subheadline-deco-line "></div>
+            </div>
+            <div class="feature-mugs w-[95%] lg:w-[65%] mx-auto mb-6">
+                <div class="grid lg:grid-cols-2 lg:gap-4 gap-8">
+                    <div class="custom-product-card ">
                         <div
-                            class="custom-magazine-image basis-1/2 md:flex md:flex-row gap-5 w-full h-full mb-5 md:mb-0">
-                            <div
-                                class="custom-magazine-big-image mb-3 xs:mb-5 md:mb-0 basis-2/3 h-[280px] bg-[url('./img/coffe_news_01.jpg')] bg-cover bg-no-repeat bg-center">
-                            </div>
-                            <div class="custom-magazine-small-image basis-1/3 flex flex-row md:flex-col gap-3 xs:gap-5">
+                            class="h-[400px] sm:h-[540px] bg-[url('./img/feature_mug1.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
                                 <div
-                                    class="custom-magazine-small-image basis-1/2 h-[130px] xs:h-[200px] md:h-[130px] bg-[url('./img/coffee_news_02.jpg')] bg-cover bg-no-repeat bg-center">
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
                                 </div>
+                            </a>
+                        </div>
+                        <div class="text-center mt-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Pink
+                                Premium Ceramic</a>
+                            <div class="custom-price">
+                                <span class="text-xl text-coffee-400">$50.00 USD</span>
+                                <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div
+                            class="h-[400px] lg:h-[540px] bg-[url('./img/more_product_06.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
                                 <div
-                                    class="custom-magazine-small-image basis-1/2 h-[130px] xs:h-[200px] md:h-[130px] bg-[url('./img/coffee_news_03.jpg')] bg-cover bg-no-repeat bg-center">
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <!-- <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div> -->
+                                    <div
+                                        class="absolute  bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="custom-magazine-post lg:basis-1/2 pl-8 xl:pl-14 text-center md:text-left">
-                            <div class="uppercase tracking-widest text-gray-500 font-medium text-xs mb-4">
-                                Premium Offer</div>
-                            <div class="text-4xl mb-4">Get our Coffee Magazine</div>
-                            <div class="text-gray-500 leading-7 mb-4">The most versatile furniture system ever created.
-                                Designed
-                                to fit
-                                your life.
+                        <div class="text-center mt-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Golden
+                                Designers Mug</a>
+                            <div class="custom-price">
+                                <!-- <span class="text-lg text-coffee-400">$50.00 USD</span> -->
+                                <span class="ml-2 text-gray-500">$67.00 USD</span>
                             </div>
-                            <div class="custom-button bg-gray-900 text-white w-max mx-auto md:mx-0">Start shopping</div>
                         </div>
                     </div>
-                </div> <!--end coffee-news-->
-
-                <!-- parallax -->
-                <div
-                    class="custom-parallax-bg h-[400px] mb-24 bg-[url('./img/parallax_bg.jpg')] bg-cover bg-no-repeat bg-center bg-fixed w-[100vw] relative left-[calc(-50vw_+_50%)]">
                 </div>
-                <!--end parallax-->
+            </div> <!--end feature mugs-->
 
-                <div class="custom-subheadline ">
-                    <div class="custom-subheadline-deco-line "></div>
-                    <div class="custom-subheadline-label ">
-                        Behind the mugs, lifestyle stories
+            <div class="custom-subheadline ">
+                <div class="custom-subheadline-deco-line "></div>
+                <div class="custom-subheadline-label ">
+                    More Products</div>
+                <div class="custom-subheadline-deco-line "></div>
+            </div>
+            <div class="more-products w-[95%] lg:w-[65%] mx-auto mb-6">
+                <div class="grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4 gap-8">
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_05.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Red Love
+                                Cup</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                <span class="text-gray-500">$50.00 USD</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="custom-subheadline-deco-line "></div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_07.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Black Tea
+                                Cup</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$47.00 USD</span>
+                                <span class="text-gray-500">$30.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_03.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">B&W
+                                Essentials Mug</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$20.00 USD</span>
+                                <span class="text-gray-500">$19.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_09.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Winter
+                                Style Mug</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$27.00 USD</span>
+                                <span class="text-gray-500">$25.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_01.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Ceramic
+                                Tea</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$46.00 USD</span>
+                                <span class="text-gray-500">$40.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_08.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">No Handle
+                                Bar Cup</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$34.00 USD</span>
+                                <span class="text-gray-500">$20.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_10.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Espresso
+                                Cup by Mugs.co</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$25.00 USD</span>
+                                <span class="text-gray-500">$22.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/feature_mug1.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Pink
+                                Premium Ceramic</a>
+                            <div class="custom-price">
+                                <span class="text-xl text-coffee-400">$50.00 USD</span>
+                                <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-product-card ">
+                        <div class="h-[380px] bg-[url('./img/more_product_02.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute w-[100px] bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-coffee-400">
+                                        On Sale.</div>
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Explore Mug</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center my-8">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Summer
+                                Designer Cup</a>
+                            <div class="custom-price">
+                                <span class="ml-2 text-gray-400 line-through">$29.00 USD</span>
+                                <span class="text-gray-500">$24.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div> <!--end more-products-->
+            <div class="custom-subheadline ">
+                <div class="custom-subheadline-deco-line "></div>
+                <div class="custom-subheadline-label">
+                    Buy 2 mugs and get a coffee magazine free
+                </div>
+                <div class="custom-subheadline-deco-line "></div>
+            </div>
 
-                <!--lifestyle story-->
-                <div class="lifestyle-story w-[95%] lg:w-[65%] mx-auto mb-24">
-                    <div class="grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4 gap-8">
-                        <div class="custom-lifestyle-story-card ">
-                            <div
-                                class="h-[300px] bg-[url('./img/lifestyle_story_01.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Read The Full Story</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-left my-6">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Health
-                                    Check: why do I get a headache when I haven&apos;t had my coffee?</a>
-                                <div class="custom-description text-gray-500 leading-7 my-4">
-                                    It is a paradisematic country, in which roasted parts of sentences fly into your
-                                    mouth.
-                                </div>
-                                <div class="custom-time uppercase tracking-widest text-gray-500 font-medium text-xs">
-                                    October 9, 2018
-                                </div>
-                            </div>
+            <div class="coffee-news w-[95%] lg:w-[65%] mx-auto mb-24">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-5">
+                    <div class="custom-magazine-image basis-1/2 md:flex md:flex-row gap-5 w-full h-full mb-5 md:mb-0">
+                        <div
+                            class="custom-magazine-big-image mb-3 xs:mb-5 md:mb-0 basis-2/3 h-[280px] bg-[url('./img/coffe_news_01.jpg')] bg-cover bg-no-repeat bg-center">
                         </div>
-                        <div class="custom-lifestyle-story-card ">
+                        <div class="custom-magazine-small-image basis-1/3 flex flex-row md:flex-col gap-3 xs:gap-5">
                             <div
-                                class="h-[300px] bg-[url('./img/lifestyle_story_02.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Read The Full Story</div>
-                                    </div>
-                                </a>
+                                class="custom-magazine-small-image basis-1/2 h-[130px] xs:h-[200px] md:h-[130px] bg-[url('./img/coffee_news_02.jpg')] bg-cover bg-no-repeat bg-center">
                             </div>
-                            <div class="text-left my-6">
-                                <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Health
-                                    How long does a cup of coffee keep you awake?</a>
-                                <div class="custom-description text-gray-500 leading-7 my-4">
-                                    It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
-                                </div>
-                                <div class="custom-time uppercase tracking-widest text-gray-500 font-medium text-xs">
-                                    October 9, 2024
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-lifestyle-story-card ">
                             <div
-                                class="h-[300px] bg-[url('./img/lifestyle_story_03.jpg')] bg-cover bg-no-repeat bg-center">
-                                <a href="#" alt="zeuxi141">
-                                    <div
-                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
-                                        <div
-                                            class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
-                                            Read The Full Story</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-left my-6">
-                                <a href="#" alt="product-zeuxi141"
-                                    class="text-xl mb-3 hover:text-coffee-400 leading-8">Recent
-                                    research suggests that heavy coffee drinkers may reap health benefits.</a>
-                                <div class="custom-description text-gray-500 leading-7 my-4">
-                                    It is a paradisematic country, in which roasted parts of sentences fly into your
-                                    mouth.
-                                </div>
-                                <div class="custom-time uppercase tracking-widest text-gray-500 font-medium text-xs">
-                                    October 9, 2024
-                                </div>
+                                class="custom-magazine-small-image basis-1/2 h-[130px] xs:h-[200px] md:h-[130px] bg-[url('./img/coffee_news_03.jpg')] bg-cover bg-no-repeat bg-center">
                             </div>
                         </div>
                     </div>
-                </div> <!--end lifestyle-story-->
-
-                <div class="subcribe-us h-[350px] bg-[#1d1f2e] mb-24 flex flex-col justify-center items-center">
-                    <div class="">
-                        <div class="flex justify-center items-center px-6 xs:px-0 mb-5 ">
-                            <div class="w-8 h-px bg-gray-700 "></div>
-                            <div
-                                class="mx-4 uppercase tracking-widest text-gray-400 font-extrabold text-xs text-center ">
-                                Sign up and get free coffee bags
-                            </div>
-                            <div class="w-8 h-px bg-gray-700 "></div>
+                    <div class="custom-magazine-post lg:basis-1/2 pl-8 xl:pl-14 text-center md:text-left">
+                        <div class="uppercase tracking-widest text-gray-500 font-medium text-xs mb-4">
+                            Premium Offer</div>
+                        <div class="text-4xl mb-4">Get our Coffee Magazine</div>
+                        <div class="text-gray-500 leading-7 mb-4">The most versatile furniture system ever created.
+                            Designed
+                            to fit
+                            your life.
                         </div>
-                        <div class="text-4xl text-center mb-5 text-white">Coffee Updates</div>
-                        <div class="custom-form">
-                            <div class="flex flex-col md:flex-row justify-center items-center gap-3">
-                                <div class="custom-form-item text-center">
-                                    <input type="email" placeholder="customer@coffeestyle.io"
-                                        class="px-6 py-4 max-w-[80%] xs:max-w-full w-[350px] bg-inherit border-[1px] border-gray-700 outline-none leading-5 text-white hover:border-gray-300 duration-500 focus:border-gray-300 placeholder:uppercase placeholder:text-xs placeholder:tracking-widest placeholder:font-semibold">
+                        <div class="custom-button bg-gray-900 text-white w-max mx-auto md:mx-0">Start shopping</div>
+                    </div>
+                </div>
+            </div> <!--end coffee-news-->
+        </div>
+
+        <!-- parallax -->
+        <!-- <div class="custom-parallax h-[400px] mb-24 bg-[url('./img/parallax_bg.jpg')] bg-cover bg-no-repeat bg-center bg-fixed w-[100vw] relative left-[calc(-50vw_+_50%)]">
+        </div> -->
+        <div class="custom-parallax">
+            <div class="custom-parallax-img bg-[url('./img/parallax_bg.jpg')]"></div>
+        </div>
+        <!--end parallax-->
+
+        <div class="content-wrapper custom-static-parallax font-karla text-base mx-auto px-8">
+            <!--contenr-wrapper-->
+            <div class="custom-subheadline ">
+                <div class="custom-subheadline-deco-line "></div>
+                <div class="custom-subheadline-label ">
+                    Behind the mugs, lifestyle stories
+                </div>
+                <div class="custom-subheadline-deco-line "></div>
+            </div>
+
+            <!--lifestyle story-->
+            <div class="lifestyle-story w-[95%] lg:w-[65%] mx-auto mb-24">
+                <div class="grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-4 gap-8">
+                    <div class="custom-lifestyle-story-card ">
+                        <div class="h-[300px] bg-[url('./img/lifestyle_story_01.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Read The Full Story</div>
                                 </div>
-                                <div class="custom-form-item">
-                                    <button type="submit" class="custom-button w-full xs:w-max bg-white">
-                                        Subcribe
-                                    </button>
-                                </div>
+                            </a>
+                        </div>
+                        <div class="text-left my-6">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Health
+                                Check: why do I get a headache when I haven&apos;t had my coffee?</a>
+                            <div class="custom-description text-gray-500 leading-7 my-4">
+                                It is a paradisematic country, in which roasted parts of sentences fly into your
+                                mouth.
+                            </div>
+                            <div class="custom-time uppercase tracking-widest text-gray-500 font-medium text-xs">
+                                October 9, 2018
                             </div>
                         </div>
                     </div>
-                </div> <!--end subcribe-us-->
+                    <div class="custom-lifestyle-story-card ">
+                        <div class="h-[300px] bg-[url('./img/lifestyle_story_02.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Read The Full Story</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-left my-6">
+                            <a href="#" alt="product-zeuxi141" class="text-xl mb-3 hover:text-coffee-400">Health
+                                How long does a cup of coffee keep you awake?</a>
+                            <div class="custom-description text-gray-500 leading-7 my-4">
+                                It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
+                            </div>
+                            <div class="custom-time uppercase tracking-widest text-gray-500 font-medium text-xs">
+                                October 9, 2024
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-lifestyle-story-card ">
+                        <div class="h-[300px] bg-[url('./img/lifestyle_story_03.jpg')] bg-cover bg-no-repeat bg-center">
+                            <a href="#" alt="zeuxi141">
+                                <div
+                                    class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="absolute bg-white text-gray-900 w-11/12 bottom-4 hidden group-hover:block group-hover:animate-fadeIn  left-1/2 -translate-x-1/2 custom-button">
+                                        Read The Full Story</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-left my-6">
+                            <a href="#" alt="product-zeuxi141"
+                                class="text-xl mb-3 hover:text-coffee-400 leading-8">Recent
+                                research suggests that heavy coffee drinkers may reap health benefits.</a>
+                            <div class="custom-description text-gray-500 leading-7 my-4">
+                                It is a paradisematic country, in which roasted parts of sentences fly into your
+                                mouth.
+                            </div>
+                            <div class="custom-time uppercase tracking-widest text-gray-500 font-medium text-xs">
+                                October 9, 2024
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--end lifestyle-story-->
 
-            </main>
+            <div
+                class="subcribe-us w-full max-w-screen-2xl h-[350px] bg-[#1d1f2e] mb-24 flex flex-col justify-center items-center">
+                <div class="">
+                    <div class="flex justify-center items-center px-6 xs:px-0 mb-5 ">
+                        <div class="w-8 h-px bg-gray-700 "></div>
+                        <div class="mx-4 uppercase tracking-widest text-gray-400 font-extrabold text-xs text-center ">
+                            Sign up and get free coffee bags
+                        </div>
+                        <div class="w-8 h-px bg-gray-700 "></div>
+                    </div>
+                    <div class="text-4xl text-center mb-5 text-white">Coffee Updates</div>
+                    <div class="custom-form">
+                        <div class="flex flex-col md:flex-row justify-center items-center gap-3">
+                            <div class="custom-form-item text-center">
+                                <input type="email" placeholder="customer@coffeestyle.io"
+                                    class="px-6 py-4 max-w-[80%] xs:max-w-full w-[350px] bg-inherit border-[1px] border-gray-700 outline-none leading-5 text-white hover:border-gray-300 duration-500 focus:border-gray-300 placeholder:uppercase placeholder:text-xs placeholder:tracking-widest placeholder:font-semibold">
+                            </div>
+                            <div class="custom-form-item">
+                                <button type="submit" class="custom-button w-full xs:w-max bg-white">
+                                    Subcribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--end subcribe-us-->
+
             <!--end main-->
             <footer class="custom-footer w-[95%] lg:w-[70%] mx-auto pb-24">
                 <div class="flex flex-col md:flex-row justify-center items-center md:items-baseline md:gap-24 gap-10">
@@ -597,7 +590,7 @@
                                             </div>
                                             <div class=" text-2xl mb-4 text-center md:text-left"">
                                                 <a href="mailto:nguyeenkieen141@gmail.com">
-                                                    us@coffeestyle.io
+                                                    me@coffeestyle.io
                                                 </a>
                                             </div>
                                             <div class="text-gray-400 text-[13px] text-center md:text-left"">
