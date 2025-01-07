@@ -619,10 +619,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
-}
-
 .mb-24{
   margin-bottom: 6rem;
 }
@@ -657,10 +653,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-12{
-  margin-bottom: 3rem;
 }
 
 .block{
@@ -703,8 +695,8 @@ video {
   height: 400px;
 }
 
-.h-\[530px\]{
-  height: 530px;
+.h-\[600px\]{
+  height: 600px;
 }
 
 .h-full{
@@ -713,10 +705,6 @@ video {
 
 .h-px{
   height: 1px;
-}
-
-.h-\[600px\]{
-  height: 600px;
 }
 
 .w-11\/12{
@@ -754,14 +742,6 @@ video {
 
 .max-w-\[80\%\]{
   max-width: 80%;
-}
-
-.max-w-2{
-  max-width: 0.5rem;
-}
-
-.max-w-2xl{
-  max-width: 42rem;
 }
 
 .max-w-screen-2xl{
@@ -1012,19 +992,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-32{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .pb-24{
@@ -1189,9 +1159,10 @@ video {
 
 .custom-topmenu-expanded{
   position: absolute;
-  top: 2.5rem;
+  top: 0.25rem;
+  left: calc(-50vw + 50%);
   z-index: 50;
-  width: 100%;
+  width: 100vw;
 }
 
 @keyframes slideDown{
@@ -1211,11 +1182,17 @@ video {
   text-align: center;
 }
 
+@media (min-width: 1024px){
+  .custom-topmenu-expanded{
+    width: 100%;
+  }
+}
+
 .custom-top-menu-item{
   position: relative;
   cursor: pointer;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .custom-top-menu-item:hover{
@@ -1224,6 +1201,11 @@ video {
 }
 
 @media (min-width: 1024px){
+  .custom-top-menu-item{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
   .custom-top-menu-item::after{
     position: absolute;
     bottom: 0px;
@@ -1544,10 +1526,6 @@ video {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
-  .sm\:pt-16{
-    padding-top: 4rem;
-  }
 }
 
 @media (min-width: 768px){
@@ -1603,11 +1581,6 @@ video {
   .md\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
-  }
-
-  .md\:px-24{
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 
   .md\:text-left{
@@ -1675,6 +1648,15 @@ video {
   .lg\:px-64{
     padding-left: 16rem;
     padding-right: 16rem;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:tracking-normal{
+    letter-spacing: 0em;
   }
 }
 
