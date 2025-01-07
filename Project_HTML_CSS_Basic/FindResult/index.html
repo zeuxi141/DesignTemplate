@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>成绩查询--汉语考试服务网</title>
-  <link rel="shortcut Icon" href="./assets/images/favicon.icon.png">
+  <title>TRA CỨU ĐIỂM THI TOEIC</title>
+  <link rel="shortcut icon" href="https://s3-hfx03.fptcloud.com/online/img/favicon.png" type="image/x-icon">
 
   <style>
     * {
@@ -41,16 +41,50 @@
 
     .nav-header {
       width: 100%;
+      min-width: 1300px;
+      padding: 0 40px;
       height: 111px;
-      margin-bottom: 50px;
+      font-family: Roboto;
+      /* margin-bottom: 50px; */
       border-bottom: 1px solid #abaaaa;
       background-color: #f1f1f2;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      /* justify-content: start; */
+      gap: 10px;
     }
 
+    .slide-img {
+      width: 100%;
+      min-width: 1300px;
+      margin: 0 0 20px 0;
+      line-height: 1.5;
+      /* height: 111px; */
+    }
+
+    .nav-header>p {
+      font-size: 30px;
+      color: #666666;
+      font-weight: bold;
+      margin-left: 15vw;
+    }
+
+    /* @media (max-width: 600px) {
+      .nav-header>p {
+        font-size: 20px;
+      }
+    } */
+
+    /* .nav-logo {
+      margin-left: 15vw;
+    } */
+
     .score-certificates-section {
-      width: 963px;
-      height: 60vh;
+      width: 1300px;
+      height: 100vh;    
       margin: auto;
+      margin-top: 10vh;
       display: flex;
       justify-content: center;
       gap: 10px;
@@ -93,7 +127,7 @@
 
     .main-content {
       width: 700px;
-      height: 100vh;
+      /* height: 100vh; */
     }
 
     .head-content {
@@ -218,21 +252,28 @@
     }
 
     #bottom_mulu {
-      height: 172px;
+      width: 100%;
+      min-width: 1300px;
+      height: 500px;
       margin-top: 5px;
+      background-color: #09223A;
     }
 
     #list_all {
-      width: 1024px;
+      min-width: 1300px;
       height: 230px;
-      overflow: left;
-      padding-left: 79px;
+      color: #FFFFFF;
+      /* overflow: left; */
+      padding: 79px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     #list_1 {
       font-size: 12px;
       line-height: 24px;
-      width: 184px;
+      width: 200px;
       text-align: center;
       float: left;
       margin-right: 5px;
@@ -242,8 +283,44 @@
     #lilili {
       line-height: 16px;
       margin-top: 10px;
+      font-size: 14px;
       text-align: left;
       margin-left: 12px;
+      font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #lilili a {
+      color: #FFFFFF;
+    }
+
+    .suggestion {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .list-icon {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .list-icon>img {
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+    }
+
+    .footer-col1{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bo-cong-thuong > img{
+      width: 150px;
+      height: 56px;
     }
   </style>
 </head>
@@ -251,30 +328,29 @@
 <body>
   <section class="container">
     <header class="nav-header">
-      <div class="banner-image"></div>
+      <!-- <div class="banner-image"></div> -->
+      <a href="" class="nav-logo">
+        <img alt="IIG" height="48" data-sticky-width="82" data-sticky-height="40"
+          src="https://s3-hfx03.fptcloud.com/online/media/d3vdcety/logo.png">
+
+      </a>
+      <a href="" class="nav-logo">
+        <img alt="IIG" height="60" data-sticky-width="82" data-sticky-height="40"
+          src="https://www.regenbig.es/wp-content/uploads/2019/05/logo-toeic-ampliado-700x196.png">
+
+      </a>
+      <p>Test of English for International Communication (TOEIC)</p>
+
     </header>
+    <a href="" target="_blank">
+      <img class="slide-img" src="https://s3-hfx03.fptcloud.com/online/media/jn4abf5b/anh-bia-vn.png" alt="online 1"
+        data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+    </a>
     <!-- end of nav-header -->
     <section class="score-certificates-section">
-      <div class="score-certificates">
-        <div class="score-certificates-title">
-          <h3>Score Certificates</h3>
-        </div>
-        <ul>
-          <li class="item">
-            Score
-          </li>
-          <li style="border-bottom: 1px solid #cdced0;" class="item">
-            certificates
-          </li>
-        </ul>
-        <div class="intrbo-1">
-          <img src="./assets/images/intro_bo_1.jpg" alt="">
-        </div>
-      </div>
-      <!-- end of score-certificates -->
       <div class="main-content">
         <div class="head-content">
-          Score
+          Certification of Test Results
         </div>
         <div class="content">
           <div class="info-all-top2">
@@ -286,7 +362,7 @@
             </div>
             <div id="check_form_a">
               <div id="check_form_left">
-                Ticket No.
+                Identification
               </div>
               <div id="check_form_right">
                 <input style="padding-left: 10px;" name="zid" value="" type="text" class="query_input" maxlength="40"
@@ -302,10 +378,25 @@
             </div>
             <div id="check_form_a">
               <div id="check_form_left">
+                Full Name
+              </div>
+              <div id="check_form_right">
+                <input style="padding-left: 10px;" name="zid" value="" type="text" class="query_input" maxlength="40"
+                  needvalidate="true" size="20" style="line-height: 20px;" id="full_name" required>
+                *
+                Please enter your full name.
+                <span id="check_error_name" style="color:red; display: none;"><span id="checkcode_img"><img
+                      src="./assets/images/exclamation.gif"></span>Your name is not found!</span>
+                <!-- <a href="javascript:goguize();"
+                    style="display: inline; text-decoration: underline;">Admission Ticket No. </a>  -->
+                <br>
+              </div>
+            </div>
+            <div id="check_form_a">
+              <div id="check_form_left">
                 Code
               </div>
               <div id="check_form_right">
-
                 <input style="padding-left: 5px;" type="text" name="checkcode" maxlength="6" needvalidate="true"
                   id="cpatchaTextBox" class="checkcode" required>
                 *&nbsp;
@@ -333,260 +424,117 @@
         <!--   -->
     </section>
     <!-- end of main-content -->
-    <div id="bottom" align="center">
+    <!-- <div id="bottom" align="center">
       <div id="bottom_logo"></div>
-    </div>
+    </div> -->
     <div id="bottom_mulu" align="center">
       <div id="bottom_all">
         <div id="list_all">
-          <div id="list_1">
+          <div id="list_1" class="footer-col1">
             <div id="lilili">
               <!-- 首页 -->
-              <strong>Home</strong>
+              <strong>
+                <img src="https://s3-hfx03.fptcloud.com/online/img/home/logo-footer.png">
+              </strong>
             </div>
-            <!-- 国家汉办 -->
-
-            <!-- 汉考国际 -->
             <div id="lilili">
 
-              <a href="https://old.chinesetest.cn/goaboutus.do">About Us</a>
+              <a>
+                <span style='font-size:16px;'>&#128381;</span>
+                1900636929</a>
 
             </div>
-            <!-- 新闻公告 -->
             <div id="lilili">
 
-              <a href="/gospnews.do?lid=1&amp;id=1">Announcement</a>
+              <a href="">info@iigvietnam.edu.vn</a>
               <br>
 
             </div>
-            <!-- 考试研究 -->
             <div id="lilili">
 
-              <a href="/gonewcontent.do?id=11">Research</a>
+              <a class="suggestion">
+                <img src="https://s3-hfx03.fptcloud.com/online/img/home/send.png">
+                Suggestion inbox</a>
+
+            </div>
+            <div id="lilili" class="list-icon">
+              <img class="logo-social" src="https://s3-hfx03.fptcloud.com/online/img/home/youtube-logo.png">
+              <img class="logo-social" src="https://s3-hfx03.fptcloud.com/online/img/home/fb-logo.jpg">
+              <img class="logo-social" src="https://s3-hfx03.fptcloud.com/online/img/home/zalo-logo.png">
               <br>
-
-            </div>
-            <!-- 联系我们-->
-            <div id="lilili">
-
-              <a href="/linkusm.do" title="">Contact Us</a>
-
-            </div>
-            <!-- 考点申请-->
-            <div id="lilili">
-
-              <a href="/kaodianApply.do" title="" style="color: red;">Apply for examination site</a>
-
-            </div>
-            <!-- 友情链接 -->
-            <!-- 法律声明 -->
-            <div id="lilili">
-
-              <a href="/golawintro.do" title="">Legal Notice</a>
-
-            </div>
-            <!-- 隐私声明 -->
-            <div id="lilili">
-
-              <a href="/golawintro.do?flag=paivateID" title="">Privacy Statement</a>
-
-            </div>
-          </div>
-          <div id="list_1">
-            <div id="lilili">
-              <!-- 汉语考试 -->
-              <!-- <a href="#">汉语考试</a> -->
-              <!-- 需要翻译 -->
-              <strong>Test And Registration</strong>
-            </div>
-            <!-- 考试介绍 -->
-            <div id="lilili">
-
-              <a href="/gosign.do?id=1&amp;lid=0">About The HSK</a>
-
-            </div>
-            <!-- 考试规则-->
-            <div id="lilili">
-
-              <a href="/gotestlaw.do">Test Regulation</a>
-
-            </div>
-            <!-- 考点信息 -->
-            <div id="lilili">
-
-              <a href="/goKdInfoOrPlan.do" style="color:red;">Global Test Centers</a>
-
-            </div>
-
-            <div id="lilili">
-
-              <!-- 需要翻译 -->
-              <a href="/goKdInfoOrPlan.do?type=hsk">Test Arrangement </a>
-
-            </div>
-
-            <div id="lilili">
-
-              <!-- 需要翻译 -->
-              <a href="https://www.chinesetest.cn/login?uri=https://www.chinesetest.cn/kaoshibaoming?xmId=13">Apply for
-                HSK</a>
-
-            </div>
-            <div id="lilili">
-
-              <!-- 需要翻译 -->
-              <a href="https://www.chinesetest.cn/login?uri=https://www.chinesetest.cn/kaoshibaoming?xmId=15">Apply for
-                YCT</a>
-
-            </div>
-            <div id="lilili">
-
-              <!-- 需要翻译 -->
-              <a href="https://www.chinesetest.cn/login?uri=https://www.chinesetest.cn/kaoshibaoming?xmId=14">Apply for
-                BCT</a>
-
             </div>
           </div>
           <div id="list_1">
             <div id="lilili">
               <!-- 成绩服务 -->
-              <strong>Score Enquiry</strong>
+              <strong>ADDRESS</strong>
             </div>
             <!-- 成绩查询-->
             <div id="lilili">
-              <a href="/goquery.do">Score</a>
+              <strong href="">Headquarters</strong>
+              <p> 75 Giang Van Minh, Ba Dinh Dist, Hanoi</p>
             </div>
             <!-- 证书查询-->
             <div id="lilili">
-              <a href="/gosearchzs.do">Score Report</a>
+              <strong href="">Da Nang Branch</strong>
+              <p>19 Hoang Van Thu, Hai Chau Dist, Danang</p>
             </div>
             <!-- 成绩进度查询-->
             <div id="lilili">
-              <a href="/goChengjijindu.do">Score Release Progress</a>
+              <strong href="">Trung Yen Office</strong>
+              <p>3rd floor, Trung Yen Plaza, 01 Trung Hoa, Cau Giay Dist, Hanoi</p>
+            </div>
+            <div id="lilili">
+              <strong href="">Ho Chi Minh City Branch</strong>
+              <p>1st Floor, Tower 1, The Sun Avenue Building, No. 28 Mai Chi Tho, An Phu Ward, Thu Duc, HCM City</p>
             </div>
             <!-- Jiangzt29：增加英文翻译及中文部分内容更改 -->
             <!-- 申请成绩单-->
 
-
-            <div id="lilili">
-              <a href="https://www.chinesetest.cn/extra-apply-score-server">Apply for duplicates of the score report</a>
-            </div>
-            <div id="lilili">
-              <a href="https://www.chinesetest.cn/InfoEditServer">Apply for the Score Report Modification</a>
-            </div>
-            <!-- 成绩复议申请 -->
-            <div id="lilili">
-              <a href="https://www.chinesetest.cn/report-sketch">Apply for the Score Reassessment</a>
-            </div>
           </div>
           <div id="list_1">
             <div id="lilili">
               <!-- 资源中心 -->
               <!-- 需要翻译 -->
-              <strong>Download Center</strong>
+              <strong>LINK</strong>
             </div>
             <!-- 试卷下载 -->
 
             <!-- 手册类  报考手册下载 -->
             <div id="lilili">
-              <a href="/godownload.do" title="">Registration Manual</a>
+              <a href="" title="">About us</a>
             </div>
             <!-- 表格类  报名表下载 -->
             <div id="lilili">
-              <a href="/godownload.do" title="">Registration Form</a>
+              <a href="" title="">Careers</a>
             </div>
             <!-- 样卷类  样卷与模拟题下载-->
             <div id="lilili">
-              <a href="/godownload.do" title="">Sample Test Papers</a>
+              <a href="" title="">Privacy Policy</a>
             </div>
             <!-- 其 它  其他材料下载-->
             <div id="lilili">
-              <a href="/godownload.do" title="">Other Materials</a>
+              <a href="" title="">Other Materials</a>
             </div>
             <!-- 网上书城 -->
-            <div id="lilili">
-              <a href="/bookStore.do?method=init" title="">Online Bookstore</a>
+            <div id="lilili" class="bo-cong-thuong">
+              <img src="https://s3-hfx03.fptcloud.com/online/img/logoministry.png">
             </div>
             <!-- 宣传片下载 -->
-            <div id="lilili">
+            <!-- <div id="lilili">
               <a href="https://download.chinesetest.cn/newhsk-site/video/xuanchuan_HSK.mp4" target="_blank">Exam
                 Promo</a>
-            </div>
+            </div> -->
             <!-- 宣传片下载 -->
 
             <!-- 样卷类  样卷与模拟题下载-->
-            <div id="lilili">
+            <!-- <div id="lilili">
               <a href="/standardsAction.do?means=standardInfo" ttarget="_blank" style="color:red;">《标准》查询
-            </div>
+            </div> -->
 
-          </div>
-          <div id="list_1">
-            <div id="lilili">
-              <!-- 其它-->
-              <strong>Others</strong>
-            </div>
-            <!-- 在线提问-->
-            <div id="lilili">
-              <a href="/goonlineservice.do">Online Question</a>
-            </div>
-            <!-- 网考模拟考试-->
-            <div id="lilili">
-              <a href="https://www.hskmock.com/home/index" target="_blank">Mock Test Online</a>
-
-            </div>
-            <!-- 在线反馈 -->
-            <!-- 常见问题-->
-            <div id="lilili">
-              <a href="/goquestion.do">FAQs</a>
-            </div>
-            <!-- 考生登录 -->
-            <div id="lilili">
-              <a href="/commonActions.do?method=login" title="">Test Taker</a>
-            </div>
-            <!-- 考点登录 -->
-            <div id="lilili">
-              <a href="/manager/managerIndex.do?styleId=managerindex" title="">Test Center</a>
-            </div>
-            <!-- 取回密码 -->
-            <div id="lilili">
-              <a href="/getpasswordm.do" title="">Recover Password</a>
-            </div>
           </div>
         </div>
         <br>
-        <div>
-          <span
-            style="padding-top:10px; color:#494949; font:normal normal normal 12px/16px Verdana,宋体;">Copyright&nbsp;<em
-              style="font:normal normal bold 11px/14px Tahoma;">©</em>&nbsp;Chinese Testing International&nbsp;<em
-              style="font:normal normal bold 11px/14px Tahoma;">2009-2018</em>&nbsp;&nbsp;<a
-              href="https://beian.miit.gov.cn/#/Integrated/index" style="text-decoration:none;" title="">Beijing ICP
-              No.16003362-1</a></span>
-          <br><span style="padding-top:10px; color:#494949; font:normal normal normal 12px/16px Verdana,宋体;">It is
-            suggested to visit the website through Chrome browser or Firefox browser.</span>
-          <!-- Jiangzt6:增加网上书城许可 -->
-          <br><span style="padding-top:10px; color:#494949; font:normal normal normal 12px/16px Verdana,宋体;"><a
-              target="_blank" href="/image/xuke1.png"
-              style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">出版物经营许可证&nbsp;新出发京零&nbsp;字第西<b>150040</b>号</a></span>
-          <br>
-          <span style="padding-top:10px; color:#494949; font:normal normal normal 12px/16px Verdana,宋体;"><a
-              target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202007018"
-              style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-              <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">京公网安备 11010202007018号</p>
-            </a></span>
-          <br>
-
-          <!-- 
-          <a href="https://xyt.xcc.cn/getpcInfo?sn=1534378606719897600&amp;language=CN&amp;certType=8&amp;url=*.chinesetest.cn"
-            target="_blank" style="position: relative;display: inline-block;height: 38px;">
-            <div style="width:100%;height:100%;position: absolute;top: 0;left: 0;"></div><embed
-              src="https://program.xinchacha.com/web/1534378606719897600=*.chinesetest.cn.svg" width="103" height="38"
-              type="image/svg+xml" pluginspage="//www.adobe.com/svg/viewer/install/">
-          </a> -->
-
-
-
-          <br>
-        </div>
       </div>
     </div>
 
@@ -630,11 +578,26 @@
         }
       }
 
+      function validateName() {
+        let error_code = document.getElementById("check_error_name");
+        event.preventDefault();
+        if (document.getElementById("full_name").value == "NGO ANH THU") {
+          error_code.style.display = "none"
+          //link to the success page
+          return true;
+        } else {
+          error_code.style.display = "block";
+          return false;
+        }
+      }
+
       function validateForm() {
         let error_code = document.getElementById("checkid_error");
-        if (document.getElementById("your_zhunkz").value === "070302007521") {
+        if (document.getElementById("your_zhunkz").value === "31201020121") {
           if (validateCaptcha()) {
-            window.location.href = "./TestResult.html";
+            if(validateName()){
+              window.location.href = "./TestResult.html";
+            }
           }
         } else {
           error_code.style.display = "block";
